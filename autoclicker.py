@@ -54,10 +54,10 @@ def updateDelay():
     
     try:
         delay = int(delayEntry.get())
-        if delay < 5:
-            delay = 5
+        if delay < MINDELAY:
+            delay = MINDELAY
             delayEntry.delete(0, tk.END)
-            delayEntry.insert(0, "5")
+            delayEntry.insert(0, str(MINDELAY))
         ecps.config(text=f"Estimated CPS: ~{round(1000 / delay, 2)}")
     except ValueError:
         delayEntry.delete(0, 'end')
