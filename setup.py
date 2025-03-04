@@ -1,5 +1,5 @@
-import pkgutil;
-from cx_Freeze import setup, Executable;
+import pkgutil
+from cx_Freeze import setup, Executable
 
 # functions
 def AllPackage(): 
@@ -22,7 +22,7 @@ LIBRARIES = ["tkinter", "ttkthemes", "keyboard"]
 PACKAGES = ["ctypes", "re", "PIL", "logging", "json"]
 
 # exclude unneed packages
-BasicPackages = ["collections", "encodings", "importlib"] + LIBRARIES;
+BasicPackages = ["collections", "encodings", "importlib"] + LIBRARIES
 build_exe_options = {
     "include_files": INCLUDEDFILES,
     "includes": BasicPackages,
