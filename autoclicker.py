@@ -175,7 +175,7 @@ keybindEntry.bind("<FocusOut>", lambda e: setKeyFlag(False))
 mFr.place(relx=0.5, rely=0.5, anchor="c")
 
 # credits label
-creditsLabel = ttk.Label(r, text="Made by Nayif E. | v1.0.0", font=("Roboto", 8), background="#464646", foreground="#747474")
+creditsLabel = ttk.Label(r, text="Made by Nayif E. | v1.0.1", font=("Roboto", 8), background="#464646", foreground="#747474")
 creditsLabel.place(relx=1.0, rely=1.0, anchor="se", x=-10, y=-5)  # Bottom-right corner with slight padding
 
 # listen to default key press
